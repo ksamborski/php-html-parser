@@ -135,7 +135,6 @@ class Dom
      */
     public function load($str, $options = [])
     {
-        AbstractNode::resetCount();
         // check if it's a file
         if (strpos($str, "\n") === false && is_file($str)) {
             return $this->loadFromFile($str, $options);
